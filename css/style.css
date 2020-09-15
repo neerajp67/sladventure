@@ -195,3 +195,13 @@ li a:hover{
   50%  {left:-5px; top:0px;}
   100% { left:0px; top:0px;}
 }
+
+/* About Us */
+#aboutus p{
+  /* text-align: left; */
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
+  
+  
+}
