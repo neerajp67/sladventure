@@ -1,0 +1,197 @@
+li a{
+    color: white;
+    }
+li a:hover{
+    font-weight: bold;
+    color: white;
+    text-decoration: underline !important;
+}
+.navbar-toggler{
+    border-color: white;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-brand img{
+    width:70px;
+    animation-duration: 2s;
+    animation-name: logoAnimation;
+    position: relative;
+}
+@keyframes logoAnimation {
+    0%   { left:0px; top:0px;}
+    25%   { left:-50px; top:10px;}
+    50%  {left:50px; top:0px;}
+    100% { left:0px; top:0px;}
+  }
+
+  /* carousel */
+ 
+  /* packages */
+  .wrapper {
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .container-fostrap {
+    display: table-cell;
+    padding: 1em;
+    text-align: center;
+    vertical-align: middle;
+    }
+    .container-fostrap hr{
+        height: 2px;
+    }
+  .fostrap-logo {
+    width: 100px;
+    margin-bottom:15px
+  }
+  h1.heading {
+    font-weight: 400;
+    margin: 0 0 0.5em;
+    color: black;
+  }
+  @media (min-width: 450px) {
+    h1.heading {
+      font-size: 3.55em;
+    }
+  }
+  @media (min-width: 760px) {
+    h1.heading {
+      font-size: 3.05em;
+    }
+  }
+  @media (min-width: 900px) {
+    h1.heading {
+      font-size: 3.25em;
+      margin: 0 0 0.3em;
+    }
+  } 
+  .card {
+    display: block; 
+      margin-bottom: 20px;
+      line-height: 1.42857143;
+      background-color: #fff;
+      border-radius: 2px;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+      transition: box-shadow .25s; 
+  }
+  .card:hover {
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  .img-card {
+    width: 100%;
+    height:200px;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    display:block;
+      overflow: hidden;
+  }
+  .img-card img{
+    width: 100%;
+    height: 200px;
+    object-fit:cover; 
+    transition: all .25s ease;
+  } 
+  .card-content {
+    padding:15px;
+    text-align:left;
+  }
+  .card-title {
+    margin-top:0px;
+    font-weight: 700;
+    font-size: 1.65em;
+  }
+  .card-title a {
+    color: #000;
+    text-decoration: none !important;
+  }
+  #price{
+    font-weight: bolder; 
+    color: green;
+    text-align: right;
+  }
+  /* footer */
+  section {
+    padding: 25px 0;
+    }
+
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul li {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li,
+#footer ul.quick-links li {
+	color:#ffffff;
+}
+#footer ul.social li:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li i{
+	margin-right: 6px;
+}
+
+#footer ul.quick-links li:hover i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+.card{
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-name: cardAnimation;
+ }
+@keyframes cardAnimation {
+  0%   { left:0px; top:10px;}
+  25%   { left:0px; top:20px;}
+  50%  {left:-5px; top:0px;}
+  100% { left:0px; top:0px;}
+}
