@@ -3,46 +3,58 @@
 
 <head>
     <title>Services | SLA</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- bootstarp -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- responsive -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- favicon.ico -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <!-- Header -->
-    <nav class="navbar navbar-light bg-light justify-content-center">
-        <span class="navbar-brand mb-0 h1"><a class="navbar-brand" href="#">
-                <img src="img/sla Logo.png" alt="Logo">
-            </a></span>
-    </nav>
-    <!-- Navbar -->
-    <nav class="navbar sticky-top navbar-expand-md bg-success">
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-light-transprent container">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" width="90" height="60" class="d-inline-block align-center" alt="" href="index.html">
+        </a>
+        <form class="form-inline ">
+            <button class="btn btn-outline-success ml-2" type="button">Sign In</button>
+        </form>
+    </nav>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark navbar-primary bg-success main-nav ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse"></div>
-        <div class="collapse navbar-collapse " id="collapsibleNavbar">
-            <ul class="navbar-nav ">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav mx-auto ">
                 <li class="nav-item mx-2">
                     <a class="nav-link " href="index.html">Home</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item mx-2">
                     <a class="nav-link" href="tourPackages.html">Tour Packages</a>
                 </li>
                 <li class="nav-item mx-2">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item mx-2">
                     <a class="nav-link" href="blog.html">Blogs</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item mx-2">
                     <a class="nav-link" href="contact.html">Contact Us</a>
@@ -50,26 +62,16 @@
                 <li class="nav-item mx-2">
                     <a class="nav-link" href="enquiry.html">Enquiry</a>
                 </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Sign In</a>
-                </li>
             </ul>
         </div>
     </nav>
-
-    <section class="wrapper">
-        <div class="container-fostrap">
-            <div>
-                <h1 class="heading">
-                    Our Services
-                </h1>
-                <hr width="10%" color="green">
-            </div>
-    </section>
-
-    <section >
+    <!-- end nav bar -->
+    <h1 class="heading">
+        Our Services
+    </h1>
+    <section>
         <div class="container" id="services">
-            <div class="row">
+            <div class="row" data-aos=fade-right>
                 <div class="col-xs-12 col-sm-6">
                     <img src="img/trek.jpg" alt="">
                 </div>
@@ -79,13 +81,14 @@
                         <h6>
                             HELPFUL, EXPERIENCED, PROFESSIONAL LOCAL GUIDE
                         </h6>
+                        <button class="mx-auto">Contact</button>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" data-aos=fade-left>
                 <div class="col-xs-12 col-sm-6">
-                    <img src="img/trek.jpg" alt="">
+                    <img src="img/accomandation.jpg" alt="">
                 </div>
                 <div class="col-xs-12 col-sm-6">
                     <div class="card" id="serviceCard">
@@ -94,11 +97,12 @@
                             ACCOMMODATION (PERSONAL ROOMS AND TENTS PER NIGHT AND ON QUAD SHARING) BREAKFAST, LUNCH AND
                             DINNER (VEG AND NON-VEG)
                         </h6>
+                        <button class="mx-auto">Contact</button>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" data-aos=fade-right>
                 <div class="col-xs-12 col-sm-6">
                     <img src="img/trek.jpg" alt="">
                 </div>
@@ -108,21 +112,25 @@
                         <h6>
                             TOUR AND TREK ORGANISING IN UTTARAKHAND AND IN HIMACHAL PRADESH
                         </h6>
+                        <button class="mx-auto">Contact</button>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" data-aos=fade-left>
                 <div class="col-xs-12 col-sm-6">
-                    <img src="img/trek.jpg" alt="">
+                    <img src="img/tour and travel.jpg" alt="">
                 </div>
                 <div class="col-xs-12 col-sm-6">
-                   <a href="contact.html"><div class="card" id="serviceCard">
-                        <h4 class="card-title">TOUR AND TRAVELS</h4>
-                        <h6>
-                            Contact us for Tour Management and Vehicle booking for tours.
-                        </h6>
-                    </div></a> 
+                    <a href="contact.html">
+                        <div class="card" id="serviceCard">
+                            <h4 class="card-title">TOUR AND TRAVELS</h4>
+                            <h6>
+                                Contact us for Tour Management and Vehicle booking for tours.
+                            </h6>
+                            <button class="mx-auto">Contact</button>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -186,6 +194,30 @@
             </p>
         </div>
     </section>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="js/main.js"></script>
+    <!-- bootstarp js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- end bootstarp -->
+    <!-- jquery -->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- aos -->
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 1000,
+        });
+    </script>
 </body>
 
 </html>

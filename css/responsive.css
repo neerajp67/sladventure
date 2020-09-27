@@ -1,0 +1,87 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .navbar .form-inline {
+       margin: auto;
+
+    }
+    .overlay h2{
+        font-size: 1.8rem;
+           } 
+           .overlay{
+               height: 50vh;
+           }
+           .overlay p{
+               font-size: 1.3rem;
+           }
+           
+           .Services{
+               align-items: center;
+               justify-content: center;
+              
+           }
+           .Services .card{
+               margin-top: 1rem;
+               margin-bottom: 1rem;
+           }
+           .testimonial .carousel-inner{
+               height: 20rem;
+           }
+           .testimonial .testimonial4_slide p{
+           font-size: 1rem;
+           font-weight: 200;
+        }
+        .fancy-cards{
+            width: 100%;
+        margin: 0;
+        }
+        .fancy-card .top, .fancy-card .middle, .fancy-card .bottom{
+        justify-content: center;
+        align-items: center;
+        width: 89%;
+        
+
+          }
+        .carousal2{
+            margin-top: 5rem;
+            width: 100%;
+            display: inline-block;
+          }
+          .carousal2 .carousel-item{
+           height: 18rem;
+         } 
+         .carousal2 .carousel-item img{
+           height: 18rem;
+         } 
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .service {
+        display: cover;
+        font-size: 1rem;
+        margin: 5rem 0rem;
+        padding: 0;
+    
+    }
+    .card {
+        float: initial;
+        
+
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only  (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

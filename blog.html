@@ -3,47 +3,57 @@
 
 <head>
     <title>Blogs | SLA</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- bootstarp -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- responsive -->
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- favicon.ico -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <!-- Header -->
-    <nav class="navbar navbar-light bg-light justify-content-center">
-        <span class="navbar-brand mb-0 h1"><a class="navbar-brand" href="#">
-                <img src="img/sla Logo.png" alt="Logo">
-            </a></span>
-    </nav>
     <!-- Navbar -->
-    <nav class="navbar sticky-top navbar-expand-md bg-success">
+    <nav class="navbar navbar-light bg-light-transprent container">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" width="90" height="60" class="d-inline-block align-center" alt="">
+        </a>
+        <form class="form-inline ">
+            <button class="btn btn-outline-success ml-2" type="button">Sign In</button>
+        </form>
+    </nav>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark navbar-primary bg-success main-nav ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse"></div>
-        <div class="collapse navbar-collapse " id="collapsibleNavbar">
-            <ul class="navbar-nav ">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav mx-auto ">
                 <li class="nav-item mx-2">
                     <a class="nav-link " href="index.html">Home</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item mx-2">
                     <a class="nav-link" href="tourPackages.html">Tour Packages</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Blogs</a>
+                    <a class="nav-link" href="services.html">Services</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link" href="services.html">Services</a>
+                    <a class="nav-link" href="blog.html">Blogs</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item mx-2">
                     <a class="nav-link" href="contact.html">Contact Us</a>
@@ -51,85 +61,70 @@
                 <li class="nav-item mx-2">
                     <a class="nav-link" href="enquiry.html">Enquiry</a>
                 </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Sign In</a>
-                </li>
             </ul>
         </div>
     </nav>
-
-
-    <section class="wrapper">
-        <div class="container-fostrap">
-            <div>
-                <h1 class="heading">
-                    Our Blogs
-                </h1>
-                <hr width="10%" color="green">
-            </div>
-    </section>
-
+    <!-- end nav bar -->
+    <h1 class="heading">
+        Our Blogs
+    </h1>
     <section id="blogs">
-        <div class="w3-content" style="max-width:1250px">
+        <div class="w3-content" style="max-width:1250px" data-aos=fade-up>
             <div class="w3-row">
                 <!-- Blog entries -->
                 <div class="w3-col l8 s12">
-                    <div class="w3-card-4 w3-margin w3-white">
+                    <div class="w3-card-4 w3-margin w3-white" data-aos=fade-left>
                         <img src="img/blog.jpg" alt="" style="width:100%">
                         <div class="w3-container">
                             <h3><b>TITLE HEADING</b></h3>
                             <h5>Title description, <span class="w3-opacity">dd-mm-yy</span></h5>
                         </div>
 
-                        <div class="w3-container">
+                        <div class="w3-container" data-aos=fade-down>
                             <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id
                                 lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at.
                                 Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
                                 tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue
                                 gravida diam non fringilla.</p>
-                            <p><button class="w3-right w3-button w3-padding-large bg-success w3-border text-white"
-                                    style="margin-bottom: 5px;"><b>READ MORE
-                                        »</b></button></p>
+
                         </div>
                     </div>
                     <hr>
 
-                    <div class="w3-card-4 w3-margin w3-white">
+                    <div class="w3-card-4 w3-margin w3-white" data-aos=fade-left>
                         <img src="img/blog.jpg" alt="" style="width:100%">
                         <div class="w3-container">
                             <h3><b>TITLE HEADING</b></h3>
                             <h5>Title description, <span class="w3-opacity">dd-mm-yy</span></h5>
                         </div>
 
-                        <div class="w3-container">
+                        <div class="w3-container" data-aos=fade-down>
                             <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id
                                 lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at.
                                 Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
                                 tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue
                                 gravida diam non fringilla.</p>
-                            <p><button class="w3-right w3-button w3-padding-large bg-success w3-border text-white"
-                                    style="margin-bottom: 5px;"><b>READ MORE
-                                        »</b></button></p>
+
                         </div>
                     </div>
                     <hr>
 
-                    <div class="w3-card-4 w3-margin w3-white">
+                    <div class="w3-card-4 w3-margin w3-white" data-aos=fade-left>
                         <img src="img/blog.jpg" alt="" style="width:100%">
                         <div class="w3-container">
                             <h3><b>TITLE HEADING</b></h3>
                             <h5>Title description, <span class="w3-opacity">dd-mm-yy</span></h5>
                         </div>
 
-                        <div class="w3-container">
+                        <div class="w3-container" data-aos=fade-down>
                             <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id
                                 lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at.
                                 Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
                                 tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue
                                 gravida diam non fringilla.</p>
-                            <p><button class="w3-right w3-button w3-padding-large bg-success w3-border text-white"
+                            <!-- <p><button class="w3-right w3-button w3-padding-large bg-success w3-border text-white"
                                     style="margin-bottom: 5px;"><b>READ MORE
-                                        »</b></button></p>
+                                        »</b></button></p> -->
                         </div>
                     </div>
                     <hr>
@@ -137,7 +132,7 @@
 
                 <div class="w3-col l4">
                     <!-- About Card -->
-                    <div class="w3-card w3-margin w3-margin-top">
+                    <div class="w3-card w3-margin w3-margin-top" data-aos=fade-right>
                         <img src="img/trek.jpg" style="width:100%">
                         <div class="w3-container w3-white">
                             <h4><b>SPIRIT LUMINARIES ADVENTURE</b></h4>
@@ -148,7 +143,7 @@
                     <hr>
 
                     <!-- Posts -->
-                    <div class="w3-card w3-margin">
+                    <div class="w3-card w3-margin" data-aos=fade-right>
                         <div class="w3-container w3-padding">
                             <h4>Popular Posts</h4>
                         </div>
@@ -178,7 +173,7 @@
                     <hr>
 
                     <!-- Labels / tags -->
-                    <div class="w3-card w3-margin">
+                    <div class="w3-card w3-margin" data-aos=fade-right>
                         <div class="w3-container w3-padding">
                             <h4>Tags</h4>
                         </div>
@@ -271,6 +266,30 @@
             </p>
         </div>
     </section>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="js/main.js"></script>
+    <!-- bootstarp js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- end bootstarp -->
+    <!-- jquery -->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- aos -->
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 50,
+            duration: 1000,
+        });
+    </script>
 </body>
 
 </html>
