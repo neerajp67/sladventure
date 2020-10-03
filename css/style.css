@@ -952,3 +952,114 @@ text-align:justify;
 .enquiry{
   margin: 1rem;
 }
+
+/* =======================================login button================================= */
+.loginpage{
+  padding: 10px;
+  background-position: fixed;
+  text-align: center;
+}
+
+.login-box:hover {
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.social-button {
+  background-position: 25px 0px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 3px;
+  margin: 10px auto;
+  outline: rgb(255, 255, 255) none 0px;
+  padding-left: 20%;
+  transition: all 0.2s cubic-bezier(0.72, 0.01, 0.56, 1) 0s;
+ 
+}
+
+#facebook-connect {
+  background: rgb(255, 255, 255) url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/facebook.svg?sanitize=true') no-repeat scroll 5px 0px / 30px 50px padding-box border-box;
+  border: 1px solid rgb(60, 90, 154);
+  color:  rgb(60, 90, 154) ;
+}
+
+#facebook-connect:hover {
+  background-color: rgb(60, 90, 154);
+  color: rgb(255, 255, 255);
+
+}
+
+
+#google-connect {
+  background: rgb(255, 255, 255) url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/google-plus.png') no-repeat scroll 5px 0px / 50px 50px padding-box border-box;
+  border: 1px solid rgb(220, 74, 61);
+  color: rgb(220, 74, 61);
+}
+
+#google-connect:hover {
+  background-color: rgb(220, 74, 61);
+  color: rgb(255, 255, 255);
+}
+
+
+#twitter-connect {
+  background: rgb(255, 255, 255) url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/twitter.png') no-repeat scroll 5px 1px / 45px 45px padding-box border-box;
+  border: 1px solid rgb(85, 172, 238);
+  color: rgb(85, 172, 238);
+}
+
+#twitter-connect:hover {
+  background-color: rgb(85, 172, 238);
+  color: rgb(255, 255, 255);
+}
+
+/* ************************************booking form ************************************* */
+.booking-tour{
+  margin: 20px 0;
+}
+.booking-tour.inlined {
+  width: 49%;
+  display: inline-block;
+  float: left;
+  margin-left: 1%;
+}
+
+label {
+  display: block;
+  padding-bottom: 1rem;
+  font-size: 1.25em;
+}
+
+input, select, textarea {
+  border-radius: 2px;
+  border: 1px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  width: 100%;
+  padding: 10px;
+}
+
+.booking-tour .inlined input {
+  width: 95%;
+  display: inline-block;
+}
+
+textarea {
+  height: 15rem;
+}
+
+hr {
+  border: 1px dotted #ccc;
+}
+.tour_selection {
+  box-sizing: border-box;
+  width: 50%;
+}

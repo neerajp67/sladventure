@@ -25,14 +25,35 @@
 </head>
 
 <body>
-
+  <!-- preloader -->
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
   <!-- Navbar -->
   <nav class="navbar navbar-light bg-light-transprent container">
     <a class="navbar-brand" href="index.html">
       <img src="img/logo.png" width="90" height="60" class="d-inline-block align-center" alt="" href="index.html">
     </a>
     <form class="form-inline ">
-      <button class="btn btn-outline-success ml-2" type="button">Sign In</button>
+      <button class="btn btn-outline-success ml-2" type="button" data-toggle="modal" data-target="#loginModal">Sign
+        In</button>
+      <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"> &times;</button>
+            </div>
+            <div class="row loginpage">
+              <div class="col-md-12">
+                <h2>Sign In</h2>
+                <a href="#" class="social-button" id="facebook-connect"> <span>Sign In with Facebook</span></a>
+                <a href="#" class="social-button" id="google-connect"> <span>Sign In with Google</span></a>
+                <a href="#" class="social-button" id="twitter-connect"> <span>Sign In with Twitter</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </form>
   </nav>
 
@@ -44,7 +65,7 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <ul class="navbar-nav mx-auto ">
         <li class="nav-item mx-2">
-          <a class="nav-link " href="index.html">Home</a>
+          <a class="nav-link " href="#">Home</a>
         </li>
         <li class="nav-item mx-2">
           <a class="nav-link" href="tourPackages.html">Tour Packages</a>
@@ -53,16 +74,19 @@
           <a class="nav-link" href="services.html">Services</a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link" href="blog.html">Blogs</a>
+          <a class="nav-link" href="booking.html">Booking</a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="blog.html">Blogs</a>
         </li>
         <li class="nav-item mx-2">
           <a class="nav-link" href="contact.html">Contact Us</a>
         </li>
         <li class="nav-item mx-2">
           <a class="nav-link" href="enquiry.html">Enquiry</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="about.html">About</a>
         </li>
       </ul>
     </div>
@@ -97,7 +121,7 @@
               AND IN HIMACHAL PRADESH.</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="card-link">Book a Tour</a>
+            <a href="booking.html" class="card-link">Book a Tour</a>
           </div>
         </div>
         <div class="card">
@@ -109,7 +133,7 @@
               AND NON-VEG).</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="card-link">Book a Tour</a>
+            <a href="booking.html" class="card-link">Book a Tour</a>
           </div>
         </div>
         <div class="card">
@@ -118,7 +142,7 @@
             <h5 class="card-title"> TOUR AND TRAVELS</h5>
             <p class="card-text">CONTACT US FOR TOUR MANAGEMENT AND VEHICLE BOOKING FOR TOURS.</p>
           </div>
-          <div class="card-footer"><a href="#" class="card-link">Book a Tour</a>
+          <div class="card-footer"><a href="booking.html" class="card-link">Book a Tour</a>
           </div>
         </div>
       </div>
@@ -172,7 +196,7 @@
   </section>
   <!----------------------------------------------------Package ------------------------------->
   <section id="package">
-    <div class="fancy-cards" data-aos=fade-right>
+    <div class="fancy-cards" data-aos=fade-down>
       <h1>OUR PACKAGES</h1>
       <div class="fancy-card">
         <div class="top">
@@ -332,7 +356,7 @@
   <section id="blogLink">
     <h1>OUR LATEST BLOGS</h1>
     <div class="container">
-      <div class=" py-3 ">
+      <div class=" py-3 " data-aos=fade-down>
         <!-- Card Start -->
         <div class="card">
           <div class="row ">
@@ -365,7 +389,7 @@
       </div>
       <!-- End of card -->
 
-      <div class=" py-3 ">
+      <div class=" py-3 " data-aos=fade-up>
         <!-- Card Start -->
         <div class="card">
           <div class="row ">
@@ -397,7 +421,7 @@
       </div>
       <!-- End of card -->
 
-      <div class=" py-3 ">
+      <div class=" py-3 " data-aos=fade-down>
         <!-- Card Start -->
         <div class="card">
           <div class="row ">
@@ -443,8 +467,8 @@
             <li><a href="#"><i class="fa fa-angle-double-right"></i>Home</a></li>
             <li><a href="about.html"><i class="fa fa-angle-double-right"></i>About Us</a></li>
             <li><a href="contact.html"><i class="fa fa-angle-double-right"></i>Contact</a></li>
-            <li><a href="#!"><i class="fa fa-angle-double-right"></i>Sign In</a></li>
-            <li><a href="#!"><i class="fa fa-angle-double-right"></i>Sign Up</a></li>
+            <li><a href="" data-toggle="modal" data-target="#loginModal"><i class="fa fa-angle-double-right"></i>Sign
+                In</a></li>
           </ul>
         </div>
         <div class="col-xs-12 col-sm-4 col-md-4">
@@ -454,6 +478,7 @@
             <li><a href="services.html"><i class="fa fa-angle-double-right"></i>Services</a></li>
             <li><a href="blog.html"><i class="fa fa-angle-double-right"></i>Blogs</a></li>
             <li><a href="enquiry.html"><i class="fa fa-angle-double-right"></i>Enquiry</a></li>
+            <li><a href="booking.html"><i class="fa fa-angle-double-right"></i>Booking</a></li>
           </ul>
         </div>
         <div class="col-xs-12 col-sm-4 col-md-4">
@@ -463,7 +488,6 @@
             <li><i class="fa fa-envelope"></i>spiritluminaries@gmail.com</li>
             <li><i class="fa fa-phone"></i>+91 7579277488, +91 7579299249, +91 8979197592</li>
             <li><i class="fab fa-whatsapp"></i>+91 9897632863 </li>
-
           </ul>
         </div>
 
@@ -471,9 +495,13 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
           <ul class="list-unstyled list-inline social text-center">
-            <li class="list-inline-item"><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="list-inline-item"><a href="#!"><i class="fab fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a href="#!"><i class="fab fa-instagram"></i></i></a></li>
+            <li class="list-inline-item"><a
+                href="https://www.facebook.com/Spirit-luminaries-Adventure-332150387208598"><i
+                  class="fab fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCKo5G1hW7aiIVBv2n4DhBHg"><i
+                  class="fab fa-youtube"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/spirit_luminaries_adventure/"><i
+                  class="fab fa-instagram"></i></i></a></li>
             <li class="list-inline-item"><a href="#!"><i class="fab fa-google-plus"></i></a></li>
             <li class="list-inline-item"><a href="#!"><i class="far fa-envelope"></i></a></li>
           </ul>

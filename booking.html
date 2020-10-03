@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Services | SLA</title>
+    <title>Booking | SLA</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
@@ -17,13 +17,11 @@
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- favicon.ico -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-    <!-- Header -->
-
     <!-- Navbar -->
     <nav class="navbar navbar-light bg-light-transprent container">
         <a class="navbar-brand" href="index.html">
@@ -67,10 +65,10 @@
                     <a class="nav-link " href="index.html">Home</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link" href="tourPackages.html">Tour Packages</a>
+                    <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="tourPackages.html">Tour Packages</a>
                 </li>
                 <li class="nav-item mx-2">
                     <a class="nav-link" href="booking.html">Booking</a>
@@ -91,76 +89,66 @@
         </div>
     </nav>
     <!-- end nav bar -->
-    <h1 class="heading">
-        Our Services
-    </h1>
-    <section>
-        <div class="container" id="services">
-            <div class="row" data-aos=fade-down>
-                <div class="col-xs-12 col-sm-6">
-                    <img src="img/trek.jpg" alt="">
+    <section id="booking">
+        <h1>BOOKING & CONTACT</h1>
+        <div class="modal-body container">
+            <form action="reservation.php" method="post">
+                <div class="booking-tour">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="visitor_name" placeholder="Enter your name"
+                        pattern=[A-Z\sa-z]{3,20} required>
                 </div>
-                <div class="col-xs-12 col-sm-6">
-                    <div class="card" id="serviceCard">
-                        <h4 class="card-title">TREKKING AND TRAVEL GUIDE</h4>
-                        <h6>
-                            HELPFUL, EXPERIENCED, PROFESSIONAL LOCAL GUIDE
-                        </h6>
-                        <button class="mx-auto">Contact</button>
-                    </div>
+                <div class="booking-tour">
+                    <label for="email">Your E-mail</label>
+                    <input type="email" id="email" name="visitor_email" placeholder="example@email.com" required>
                 </div>
-            </div>
-
-            <div class="row" data-aos=fade-up>
-                <div class="col-xs-12 col-sm-6">
-                    <img src="img/accomandation.jpg" alt="">
+                <div class="booking-tour">
+                    <label for="phone">Your Phone</label>
+                    <input type="tel" id="phone" name="visitor_phone" placeholder="123-1234-123"
+                        pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
                 </div>
-                <div class="col-xs-12 col-sm-6">
-                    <div class="card" id="serviceCard">
-                        <h4 class="card-title">ACCOMMODATION AND FOODING</h4>
-                        <h6>
-                            ACCOMMODATION (PERSONAL ROOMS AND TENTS PER NIGHT AND ON QUAD SHARING) BREAKFAST, LUNCH AND
-                            DINNER (VEG AND NON-VEG)
-                        </h6>
-                        <button class="mx-auto">Contact</button>
-                    </div>
+                <hr>
+                <!-- <div class="booking-tour inlined">
+                    <label for="Guest">Number of Guests</label>
+                    <input type="number" id="adult" name="total_guest" placeholder="1" min="1" required>
+                </div> -->
+                <div class="booking-tour inlined">
+                    <label for="checkin-date">Check-in Date</label>
+                    <input type="date" id="checkin-date" name="checkin" required>
                 </div>
-            </div>
-
-            <div class="row" data-aos=fade-down>
-                <div class="col-xs-12 col-sm-6">
-                    <img src="img/trek.jpg" alt="">
+                <div class="booking-tour inlined">
+                    <label for="checkout-date">Check-out Date</label>
+                    <input type="date" id="checkout-date" name="checkout" required>
                 </div>
-                <div class="col-xs-12 col-sm-6">
-                    <div class="card" id="serviceCard">
-                        <h4 class="card-title">TOUR AND TREK ORGANIZER</h4>
-                        <h6>
-                            TOUR AND TREK ORGANISING IN UTTARAKHAND AND IN HIMACHAL PRADESH
-                        </h6>
-                        <button class="mx-auto">Contact</button>
-                    </div>
+                <div class="booking-tour-packages">
+                    <label for="tour-selection" class="tour_selection">Select Tour Packages</label>
+                    <select id="tour-selection" name="tour_preference" required>
+                        <option value="">Choose a Tour Package from the List</option>
+                        <option value="#PKG-17">#PKG17 - Pindari Glacier Trek (7 days 6 night)</option>
+                        <option value="#PKG-18">#PKG18 - Kafni Glacier Trek (7 days 6 night)</option>
+                        <option value="#PKG-19">#PKG19 - Pindari Valley (3 days 2 night)</option>
+                        <option value="#PKG-20">#PKG20 - Sunderdhunga Valley (12 days)</option>
+                        <option value="#PKG-21">#PKG21 - Kaliya Top, Munsyari (4 days)</option>
+                        <option value="#PKG-23">#PKG23 - Pindari Glacier Trek (7 days 6 night)</option>
+                        <option value="#PKG-24">#PKG24 - Pindari Glacier Camping(1 night)</option>
+                        <option value="#PKG-25">#PKG25 - Pindari Glacier Camping(1 day 1 night)</option>
+                        <option value="#PKG-26">#PKG26 - Kafni Glacier Trek (7 days)</option>
+                    </select>
                 </div>
-            </div>
-
-            <div class="row" data-aos=fade-up>
-                <div class="col-xs-12 col-sm-6">
-                    <img src="img/tour and travel.jpg" alt="">
+                <hr>
+                <div class="booking-tour">
+                    <label for="message">Anything Else ?</label>
+                    <textarea id="message" name="visitor_message"
+                        placeholder="Tell us anything else that might be important." required></textarea>
                 </div>
-                <div class="col-xs-12 col-sm-6">
-                    <a href="contact.html">
-                        <div class="card" id="serviceCard">
-                            <h4 class="card-title">TOUR AND TRAVELS</h4>
-                            <h6>
-                                Contact us for Tour Management and Vehicle booking for tours.
-                            </h6>
-                            <button class="mx-auto">Contact</button>
-                        </div>
-                    </a>
-                </div>
-            </div>
+                <button type="submit" class="btn bg-success text-white mx-auto">Book The Packages</button>
+            </form>
         </div>
-    </section>
+        <div class="modal-footer">
+        </div>
 
+
+    </section>
     <!-- Footer -->
     <section id="footer" class="bg-success">
         <div class="container">
@@ -173,7 +161,6 @@
                         <li><a href="contact.html"><i class="fa fa-angle-double-right"></i>Contact</a></li>
                         <li><a href="" data-toggle="modal" data-target="#loginModal"><i
                                     class="fa fa-angle-double-right"></i>Sign In</a></li>
-
                     </ul>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4">
@@ -183,7 +170,7 @@
                         <li><a href="#"><i class="fa fa-angle-double-right"></i>Services</a></li>
                         <li><a href="blog.html"><i class="fa fa-angle-double-right"></i>Blogs</a></li>
                         <li><a href="enquiry.html"><i class="fa fa-angle-double-right"></i>Enquiry</a></li>
-                        <li><a href="booking.html"><i class="fa fa-angle-double-right"></i>Booking</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i>Booking</a></li>
                     </ul>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4">
@@ -246,8 +233,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
-            offset: 100,
-            duration: 1000,
+            offset: 300,
+
         });
     </script>
 </body>
