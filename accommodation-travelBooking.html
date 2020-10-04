@@ -71,7 +71,7 @@
                     <a class="nav-link" href="services.html">Services</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Booking</a>
+                    <a class="nav-link" href="booking.html">Booking</a>
                 </li>
                 <li class="nav-item mx-2">
                     <a class="nav-link" href="blog.html">Blogs</a>
@@ -90,7 +90,7 @@
     </nav>
     <!-- end nav bar -->
     <section id="booking">
-        <h1>BOOKING & CONTACT</h1>
+        <h1>ACCOMMODATION & TRAVEL BOOKING</h1>
         <div class="modal-body container">
             <form action="reservation.php" method="post">
                 <div class="booking-tour">
@@ -107,6 +107,24 @@
                     <input type="tel" id="phone" name="visitor_phone" placeholder="123-1234-123"
                         pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
                 </div>
+                <hr>
+                <!-- <div class="booking-tour inlined">
+                    <label for="Guest">Number of Guests</label>
+                    <input type="number" id="adult" name="total_guest" placeholder="1" min="1" required>
+                </div> -->
+                <div class="booking-tour-packages">
+                    <label for="tour-selection" class="tour_selection">Select a Service</label>
+                    <select id="tour-selection" name="tour_preference" required>
+                        <option value="">Choose a service from the List</option>
+                        <option value="#PKG-18">Accommodation</option>
+                        <option value="#PKG-17">Travel</option>
+                    </select>
+                </div>
+                <div class="booking-tour">
+                    <label for="text">Location</label>
+                    <input type="location" id="location" name="accommodation_location" placeholder="example; Munsyari"
+                        required>
+                </div>
                 <div class="booking-tour personCount">
                     <label for="male">Male </label>
                     <input type="number" id="male" name="male" placeholder="Number of male tourist" required>
@@ -119,11 +137,6 @@
                     <label for="male">Kids</label>
                     <input type="number" id="male" name="male" placeholder="Number of kids">
                 </div>
-                <hr>
-                <!-- <div class="booking-tour inlined">
-                    <label for="Guest">Number of Guests</label>
-                    <input type="number" id="adult" name="total_guest" placeholder="1" min="1" required>
-                </div> -->
                 <div class="booking-tour inlined">
                     <label for="checkin-date">Check-in Date</label>
                     <input type="date" id="checkin-date" name="checkin" required>
@@ -132,21 +145,6 @@
                     <label for="checkout-date">Check-out Date</label>
                     <input type="date" id="checkout-date" name="checkout" required>
                 </div>
-                <div class="booking-tour-packages">
-                    <label for="tour-selection" class="tour_selection">Select Tour Packages</label>
-                    <select id="tour-selection" name="tour_preference" required>
-                        <option value="">Choose a Tour Package from the List</option>
-                        <option value="#PKG-17">#PKG17 - Pindari Glacier Trek (7 days 6 night)</option>
-                        <option value="#PKG-18">#PKG18 - Kafni Glacier Trek (7 days 6 night)</option>
-                        <option value="#PKG-19">#PKG19 - Pindari Valley (3 days 2 night)</option>
-                        <option value="#PKG-20">#PKG20 - Sunderdhunga Valley (12 days)</option>
-                        <option value="#PKG-21">#PKG21 - Kaliya Top, Munsyari (4 days)</option>
-                        <option value="#PKG-23">#PKG23 - Pindari Glacier Trek (7 days 6 night)</option>
-                        <option value="#PKG-24">#PKG24 - Pindari Glacier Camping (1 night)</option>
-                        <option value="#PKG-25">#PKG25 - Pindari Glacier Camping (1 day 1 night)</option>
-                        <option value="#PKG-26">#PKG26 - Kafni Glacier Trek (7 days)</option>
-                    </select>
-                </div>
 
                 <hr>
                 <div class="booking-tour">
@@ -154,7 +152,7 @@
                     <textarea id="message" name="visitor_message"
                         placeholder="Tell us anything else that might be important.."></textarea>
                 </div>
-                <button type="submit" class="btn bg-success text-white mx-auto">Book The Packages</button>
+                <button type="submit" class="btn bg-success text-white mx-auto">Confirm Booking</button>
             </form>
         </div>
         <div class="modal-footer">

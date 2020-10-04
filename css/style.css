@@ -792,6 +792,7 @@ text-align:justify;
 #services #serviceCard{
   position: relative;
   margin-top: 0rem;
+  text-align: center;
 }
 #services button{
   background-color: green;
@@ -1022,6 +1023,9 @@ text-align:justify;
 }
 
 /* ************************************booking form ************************************* */
+#booking h1{
+  margin-top: 1em;
+}
 .booking-tour{
   margin: 20px 0;
 }
@@ -1052,8 +1056,19 @@ input, select, textarea {
   display: inline-block;
 }
 
+.booking-tour.personCount {
+  width: 20%;
+  display: inline-block;
+  float: left;
+  /* margin-right: 2px; */
+  margin-left: 10%;
+}
+.booking-tour .personCount input {
+  width: 95%;
+  display: inline-block;
+}
 textarea {
-  height: 15rem;
+  height: 10rem;
 }
 
 hr {
@@ -1062,4 +1077,14 @@ hr {
 .tour_selection {
   box-sizing: border-box;
   width: 50%;
+}
+@media (max-width:370px){
+  #booking h1{
+    font-size: 26px;
+  } 
+}
+@media (max-width:240px){
+  #booking h1{
+    font-size: 18px;
+  } 
 }
